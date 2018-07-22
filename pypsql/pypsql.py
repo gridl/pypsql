@@ -1,5 +1,6 @@
 import psycopg2 as postgres
 from Errors import *
+from pyparsems import *
 
 class pyPsql:
   def __init__(self):
@@ -15,7 +16,7 @@ class pyPsql:
   def debug(self, *kwargs):
     if not self._debug:
       return
-    print '[ ? ]', ' '.join([str(s) for s in *kwargs])
+    print '[ ? ]', ' '.join([str(s) for s in kwargs])
 
   def connect(self, dbname, user, password, host='127.0.0.1', port=8000):
       self._metadata['dbname'] = dbname
