@@ -1,0 +1,2 @@
+v1.0.0, 22st July 2018 - Release first version, select queries, count query, debug option
+                         and postgres setup.
